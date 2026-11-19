@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASYA KOPRUSU DANISMANLIK</title>
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261015-16">
+
+  <link rel="icon" type="image/webp" href="./img/gambar.webp">
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="brand" href="#beranda" aria-label="ASYA KOPRUSU DANISMANLIK">
+      <img src="./img/gambar.webp" alt="" onerror="this.hidden=true">
+      <span class="brand-name" data-i18n="brand">ASYA KOPRUSU DANISMANLIK</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"
+      aria-controls="navigation"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navigation" aria-label="Main navigation">
+      <a class="active" href="#beranda" data-i18n="nav0">Home</a>
+      <a href="#about" data-i18n="nav1">About Us</a>
+      <a href="#our-direction" data-i18n="nav2">Our Direction</a>
+      <a href="#our-services" data-i18n="navServices">Our Services</a>
+      <a href="#our-partner" data-i18n="navPartners">Our Partner</a>
+      <a href="#gallery" data-i18n="nav4">Gallery</a>
+      <a class="contact" href="#contact" data-i18n="nav5">Contact Us ↗</a>
+    </nav>
+    <div class="lang-switcher" role="radiogroup" aria-label="Select language">
+      <label class="lang-option">
+        <input type="radio" name="lang" value="en" aria-label="English" checked>
+        <span class="flag flag-en" title="English" aria-hidden="true"><img src="https://flagcdn.com/w80/gb.png"
+            alt="English"></span>
+      </label>
+      <label class="lang-option">
+        <input type="radio" name="lang" value="tr" aria-label="Türkçe">
+        <span class="flag flag-tr" title="Türkçe" aria-hidden="true"><img src="https://flagcdn.com/w80/tr.png"
+            alt="Türkçe"></span>
+      </label>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda" aria-label="Destination gallery" aria-roledescription="carousel" tabindex="0">
+      <div class="slide active" role="group" aria-label="1 of 4" aria-hidden="false"><img
+          src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&amp;fit=crop&amp;w=1920&amp;q=80"
+          alt="Istanbul cityscape" fetchpriority="high" decoding="async"></div>
+      <div class="slide" role="group" aria-label="2 of 4" aria-hidden="true"><img
+          src="./img/herosection/chef-asya-koprusu.webp" alt="Cappadocia landscape" decoding="async"></div>
+      <div class="slide" role="group" aria-label="3 of 4" aria-hidden="true"><img
+          src="./img/herosection/agriculture-hidroponik.webp" alt="Istanbul architecture" decoding="async"></div>
+      <div class="slide" role="group" aria-label="4 of 4" aria-hidden="true"><img
+          src="./img/herosection/spa-istanbul (1).webp" alt="Bosphorus strait" decoding="async"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Asya Koprusu Danismanlik</h1>
+        <p class="hero-subtitle"><span id="typing-text"></span><span class="typing-cursor" aria-hidden="true"></span>
+        </p>
+      </div>
+      <button class="arrow prev" aria-label="Previous image"><svg viewBox="0 0 24 24">
+          <path d="m14 5-7 7 7 7" />
+        </svg></button>
+      <button class="arrow next" aria-label="Next image"><svg viewBox="0 0 24 24">
+          <path d="m10 5 7 7-7 7" />
+        </svg></button>
+      <div class="slider-bottom">
+        <div class="dots" aria-label="Select image">
+          <button class="dot" aria-label="View image 1" aria-current="true"></button>
+          <button class="dot" aria-label="View image 2" aria-current="false"></button>
+          <button class="dot" aria-label="View image 3" aria-current="false"></button>
+          <button class="dot" aria-label="View image 4" aria-current="false"></button>
+        </div>
+        <div class="utilities"><span class="counter">01 / 04</span><button class="pause"
+            aria-label="Pause slideshow">&#8545;</button></div>
+      </div>
+      <div class="progress" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- PROFIL PERUSAHAAN -->
+    <section class="profile" id="profil" aria-labelledby="group-title">
+      <div class="profile-inner">
+        <div class="logo-wrap" data-anim="zoom">
+          <img class="big-logo" src="./img/gambar.webp" alt="Logo Asya Köprüsü Danışmanlık"
+            onerror="this.style.visibility='hidden'">
+        </div>
+
+        <div class="subsidiary">
+          <p class="sub-line" data-anim="left">
+            <span data-i18n="sub1">A Subsidiary of</span>
+            <img src="./img/sinergi-transparan.webp" alt="" onerror="this.hidden=true">
+            <span>PT Mitra Sinergi Sukses.,</span>
+          </p>
+          <p class="sub-line" data-anim="right" style="--d:.15s">
+            <img src="./img/wahana.webp" alt="" onerror="this.hidden=true">
+            <span>PT Wahana Karya Suplaindo</span>
+          </p>
+          <p class="sub-tag" data-anim="up" style="--d:.3s" data-i18n="sub2">Indonesian Manpower Agency (Head Company)
+          </p>
+        </div>
+
+        <div class="divider" data-anim="line" aria-hidden="true"></div>
+
+        <div class="group-logos">
+          <div class="g-item" data-anim="pop" style="--d:0s"><img src="./img/gambar.webp" alt="Asya Köprüsü Danışmanlık"
+              onerror="this.hidden=true"></div>
+          <div class="g-item" data-anim="pop" style="--d:.12s"><img src="./img/sinergi-transparan.webp"
+              alt="PT Mitra Sinergi Sukses" onerror="this.hidden=true"></div>
+          <div class="g-item" data-anim="pop" style="--d:.24s"><img src="./img/wahana.webp"
+              alt="PT Wahana Karya Suplaindo" onerror="this.hidden=true"></div>
+          <div class="g-item" data-anim="pop" style="--d:.36s"><img src="./img/lpk.webp" alt="LPK Mitra Bina Bangsa"
+              onerror="this.hidden=true"></div>
+        </div>
+
+        <h2 class="group-title" id="group-title">
+          <span data-anim="spread">PT. Mitra Sinergi Sukses,</span>
+          <span data-anim="spread" style="--d:.15s">PT. Wahana Karya Suplaindo</span>
+          <small data-anim="up" style="--d:.3s" data-i18n="groupSmall">&amp; Group of Company</small>
+        </h2>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-inner">
+        <h2 class="about-title" id="about-title" data-anim="up" data-i18n="aboutTitle">About Us</h2>
+        <div class="about-body">
+          <p class="about-text" data-anim="up" style="--d:.1s" data-i18n="aboutText">Asya Koprusu consulting firm is
+            operating in Turkiye as an extension of MITRA &amp; Wahana Group who has 16 years of experience, recruiting
+            more than 30.000 labors to employers within 9 branch offices all over the world. MITRA &amp; Wahana Group
+            has been accredited by several goverment institutions as one of the best companies in its sector. Our aim is
+            to carry out this experience to Asya Koprusu consulting to build trusted relationship with our partners in
+            Turkiye and give them high quality services with empowered manpower to improve the human quality and welfare
+            of the young generation. With our strategic and strong partner MITRA &amp; Wahana Group, we are happy to
+            provide services in a wide range of areas, focusing on many different sectors, from Tourism to Textile
+            Industry, from Construction Industry to certified SPA therapists.</p>
+          <p class="about-intro" data-anim="up" style="--d:.2s" data-i18n="aboutIntro">Following are the service that
+            we, Asya Koprusu consulting are able to provide:</p>
+          <ul class="about-list">
+            <li data-anim="up" style="--d:.25s" data-i18n="aboutLi0">To provide competent caregivers for all kinds of
+              elderly, children and people in need of care or to act as an intermediary in their transition to another
+              job.</li>
+            <li data-anim="up" style="--d:.3s" data-i18n="aboutLi1">Providing care services for the elderly and
+              physically disabled people without providing shelter.</li>
+            <li data-anim="up" style="--d:.35s" data-i18n="aboutLi2">Providing outsourced nursing services outside of
+              hospitals.</li>
+            <li data-anim="up" style="--d:.4s" data-i18n="aboutLi3">To provide or mediate caregivers for those looking
+              for caregivers on daily, monthly or longer-term contracts.</li>
+            <li data-anim="up" style="--d:.45s" data-i18n="aboutLi4">Providing consultancy regarding the provision of
+              help to the families of those in need of care.</li>
+            <li data-anim="up" style="--d:.5s" data-i18n="aboutLi5">Providing professional services in many areas, from
+              customer relations to drivers, from gardeners to cleaners, from hotel staff to cooks and from assistants
+              to certified spa therapists.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR DIRECTION -->
+    <section class="direction" id="our-direction" aria-labelledby="direction-title">
+      <div class="direction-inner">
+        <div class="direction-heading">
+          <div data-anim="up">
+            <p class="direction-eyebrow"><span aria-hidden="true"></span><span data-i18n="directionEyebrow">THE PEOPLE
+                BEHIND THE BRIDGE</span></p>
+            <h2 id="direction-title" class="direction-title" data-i18n="directionTitle">Our Direction</h2>
+          </div>
+          <!-- <p class="direction-description" data-anim="up" style="--d:.12s" data-i18n="directionDescription">A shared
+            vision. A personal commitment. Meet the people guiding our journey and connecting opportunities across
+            borders.</p> -->
+        </div>
+
+        <div class="direction-grid">
+          <article class="director-card" data-anim="up">
+            <div class="director-photo director-photo-arch">
+              <img src="./img/direksi/wesleyfix.webp" alt="Dr. Wesley Go" loading="lazy" decoding="async">
+              <span class="director-number" aria-hidden="true">01 /</span>
+              <span class="director-photo-label" data-i18n="directionSamplePhoto"></span>
+            </div>
+            <div class="director-caption">
+              <div>
+                <h3 data-i18n="directorName1">Dr. Wesley Go, B.Ac, M.A, M.Pd</h3>
+                <p data-i18n="directorRole1">Chairman</p>
+              </div>
+              <span class="director-mark" aria-hidden="true">&#8599;</span>
+            </div>
+          </article>
+
+          <article class="director-card director-card-offset" data-anim="up" style="--d:.12s">
+            <div class="director-photo">
+              <img src="./img/direksi/boslil.webp" alt="Lily Njomin" loading="lazy" decoding="async">
+              <span class="director-number" aria-hidden="true">02 /</span>
+              <span class="director-photo-label" data-i18n="directionSamplePhoto"></span>
+            </div>
+            <div class="director-caption">
+              <div>
+                <h3 data-i18n="directorName2">Lily Njomin</h3>
+                <p data-i18n="directorRole2">Chairman</p>
+              </div>
+              <span class="director-mark" aria-hidden="true">&#8599;</span>
+            </div>
+          </article>
+
+          <article class="director-card" data-anim="up" style="--d:.24s">
+            <div class="director-photo director-photo-corner">
+              <img src="./img/direksi/victorfix.webp" alt="Victor Nathanael" loading="lazy" decoding="async">
+              <span class="director-number" aria-hidden="true">03 /</span>
+              <span class="director-photo-label" data-i18n="directionSamplePhoto"></span>
+            </div>
+            <div class="director-caption">
+              <div>
+                <h3 data-i18n="directorName3">Victor Nathanael, S.E, M.I.B​</h3>
+                <p data-i18n="directorRole3">Co-Chairman</p>
+              </div>
+              <span class="director-mark" aria-hidden="true">&#8599;</span>
+            </div>
+          </article>
+
+          <article class="director-card director-card-offset" data-anim="up" style="--d:.3s">
+            <div class="director-photo director-photo-arch">
+              <img src="./img/direksi/dewi.webp" alt="Dewi Setyowati" loading="lazy" decoding="async">
+              <span class="director-number" aria-hidden="true">04 /</span>
+              <span class="director-photo-label" data-i18n="directionSamplePhoto"></span>
+            </div>
+            <div class="director-caption">
+              <div>
+                <h3 data-i18n="directorName4">Dewi Setyowati</h3>
+                <p data-i18n="directorRole4">Marketing Director</p>
+              </div>
+              <span class="director-mark" aria-hidden="true">&#8599;</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="direction-footer" data-anim="up">
+          <span class="direction-footer-label" data-i18n="directionFooter">People. Purpose. Possibilities.</span>
+          <span class="direction-footer-line" aria-hidden="true"></span>
+          <span class="direction-footer-note" data-i18n="directionNote">Our directors and leadership team.</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- OUR SERVICES -->
+    <section class="services" id="our-services" aria-labelledby="services-title">
+      <div class="services-inner">
+        <div class="services-heading">
+          <div data-anim="up">
+            <p class="services-eyebrow"><span aria-hidden="true"></span><span data-i18n="servicesEyebrow">EXPERTISE WITH
+                A HUMAN TOUCH</span></p>
+            <h2 id="services-title" data-i18n="servicesTitle">Our Services</h2>
+          </div>
+          <p class="services-intro" data-anim="up" style="--d:100ms" data-i18n="servicesIntro">The right people make all
+            the difference. Discover seven professions supporting the way you live, work and welcome others.</p>
+        </div>
+        <div class="services-grid">
+
+          <article class="service-reveal service-card-featured" data-anim="up" style="--d:0ms">
+            <div class="service-card">
+              <div class="service-photo"><img src="img/bidang_kerja/Caregiving &amp; Nursing.webp"
+                  alt="Caregiving and Nursing" loading="lazy" decoding="async" width="900" height="600"
+                  style="object-position:center 40%"></div>
+              <div class="service-topline">
+                <span class="service-number" aria-hidden="true">01 /</span>
+              </div>
+              <div class="service-copy">
+                <h3 data-i18n="serviceName1">Caregiving &amp; Nursing</h3>
+              </div>
+              <span class="service-bottom-line" aria-hidden="true"></span>
+            </div>
+          </article>
+          <article class="service-reveal" data-anim="up" style="--d:70ms">
+            <div class="service-card">
+              <div class="service-photo"><img src="img/bidang_kerja/Nanny.webp" alt="Nanny" loading="lazy"
+                  decoding="async" width="900" height="600" style="object-position:65% 40%"></div>
+              <div class="service-topline">
+                <span class="service-number" aria-hidden="true">02 /</span>
+              </div>
+              <div class="service-copy">
+                <h3 data-i18n="serviceName2">Nanny</h3>
+              </div>
+              <span class="service-bottom-line" aria-hidden="true"></span>
+            </div>
+          </article>
+          <article class="service-reveal" data-anim="up" style="--d:140ms">
+            <div class="service-card">
+              <div class="service-photo"><img src="img/bidang_kerja/Hospitality.webp" alt="Hospitality" loading="lazy"
+                  decoding="async" width="900" height="600" style="object-position:center 30%"></div>
+              <div class="service-topline">
+                <span class="service-number" aria-hidden="true">03 /</span>
+              </div>
+              <div class="service-copy">
+                <h3 data-i18n="serviceName3">Hospitality</h3>
+              </div>
+              <span class="service-bottom-line" aria-hidden="true"></span>
+            </div>
+          </article>
+          <article class="service-reveal" data-anim="up" style="--d:210ms">
+            <div class="service-card">
+              <div class="service-photo"><img src="img/bidang_kerja/Food &amp; Beverages Production.webp"
+                  alt="Food and Beverages Production" loading="lazy" decoding="async" width="900" height="600"
+                  style="object-position:center 25%"></div>
+              <div class="service-topline">
+                <span class="service-number" aria-hidden="true">04 /</span>
+              </div>
+              <div class="service-copy">
+                <h3 data-i18n="serviceName4">Food &amp; Beverages Production</h3>
+              </div>
+              <span class="service-bottom-line" aria-hidden="true"></span>
+            </div>
+          </article>
+          <article class="service-reveal service-card-warm" data-anim="up" style="--d:280ms">
+            <div class="service-card">
+              <div class="service-photo"><img src="img/bidang_kerja/manufacturing.webp" alt="Manufacturing"
+                  loading="lazy" decoding="async" width="900" height="600" style="object-position:center"></div>
+              <div class="service-topline">
+                <span class="service-number" aria-hidden="true">05 /</span>
+              </div>
+              <div class="service-copy">
+                <h3 data-i18n="serviceName5">Manufacturing</h3>
+              </div>
+              <span class="service-bottom-line" aria-hidden="true"></span>
+            </div>
+          </article>
+          <article class="service-reveal" data-anim="up" style="--d:280ms">
+            <div class="service-card">
+              <div class="service-photo"><img src="img/bidang_kerja/agriculture_candid.webp" alt="Agriculture"
+                  loading="lazy" decoding="async" width="900" height="600" style="object-position:center"></div>
+              <div class="service-topline">
+                <span class="service-number" aria-hidden="true">06 /</span>
+              </div>
+              <div class="service-copy">
+                <h3 data-i18n="serviceName6">Agriculture</h3>
+              </div>
+              <span class="service-bottom-line" aria-hidden="true"></span>
+            </div>
+          </article>
+          <article class="service-reveal" data-anim="up" style="--d:280ms">
+            <div class="service-card">
+              <div class="service-photo"><img src="img/bidang_kerja/spa and body therapist.webp"
+                  alt="Spa and Body Therapist" loading="lazy" decoding="async" width="900" height="600"
+                  style="object-position:center 25%"></div>
+              <div class="service-topline">
+                <span class="service-number" aria-hidden="true">07 /</span>
+              </div>
+              <div class="service-copy">
+                <h3 data-i18n="serviceName7">Spa and Body Therapist</h3>
+              </div>
+              <span class="service-bottom-line" aria-hidden="true"></span>
+            </div>
+          </article>
+        </div>
+        <div class="services-footer" data-anim="up">
+          <p data-i18n="servicesFooter">Every need starts with a conversation.</p>
+          <a class="services-cta" href="#contact"><span data-i18n="servicesCta">Let us find your people</span><span
+              aria-hidden="true">&#8599;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR PARTNER -->
+    <section class="partners" id="our-partner" aria-labelledby="partners-title">
+      <div class="partners-inner">
+        <div class="partners-heading">
+          <div data-anim="up">
+            <p class="partners-eyebrow"><span aria-hidden="true"></span><span data-i18n="partnersEyebrow">STRONGER
+                TOGETHER</span></p>
+            <h2 id="partners-title" data-i18n="partnersTitle">Our Partner</h2>
+          </div>
+          <p class="partners-description" data-anim="up" style="--d:100ms" data-i18n="partnersDescription">Shared
+            ambition. Lasting connections. The group behind our journey across borders.</p>
+        </div>
+        <div class="partner-marquee" data-anim="up" style="--d:150ms">
+          <div class="partner-track">
+            <ul class="partner-group" aria-label="Company group brands">
+              <li class="partner-brand">
+                <img class="partner-logo" src="./img/mitra/image.png" alt="The Alpfine Hotel">
+              </li>
+              <li class="partner-brand">
+                <img class="partner-logo" src="./img/mitra/grand.webp"
+                  alt="Wyndham Grand Istanbul Kalamis Marina Hotel">
+              </li>
+              <li class="partner-brand">
+                <img class="partner-logo" src="./img/mitra/livyhotel.webp" alt="Livy Suit Hotel">
+              </li>
+              <li class="partner-brand">
+                <img class="partner-logo" src="./img/mitra/crowneplaza.webp" alt="Crowne Plaza">
+              </li>
+              <li class="partner-brand">
+                <img class="partner-logo" src="./img/mitra/movenpick.webp" alt="Mövenpick Hotel">
+              </li>
+              <li class="partner-brand">
+                <img class="partner-logo" src="./img/mitra/neptun.webp" alt="Neptun Hotel">
+              </li>
+              <li class="partner-brand">
+                <img class="partner-logo" src="./img/mitra/parkdedeman.webp" alt="Park Dedeman">
+              </li>
+              <li class="partner-brand">
+                <img class="partner-logo" src="./img/mitra/suithotal.webp" alt="Suit Hotel">
+              </li>
+              <li class="partner-brand">
+                <img class="partner-logo" src="./img/mitra/lavia.webp" alt="Lavia Hotel">
+              </li>
+              <li class="partner-brand">
+                <img class="partner-logo" src="./img/mitra/grandhyat.webp" alt="Grand Hyatt">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="partners-footer">
+          <p data-i18n="partnersNote">Our partner hotels and hospitality groups.</p>
+          <button class="partners-pause" type="button" aria-pressed="false">
+            <span class="partners-pause-icon" aria-hidden="true">&#8545;</span>
+            <span data-i18n="partnersPause">Pause movement</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY: training activities. -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="gallery-inner">
+        <div class="gallery-heading">
+          <div data-anim="up">
+            <p class="gallery-eyebrow"><span aria-hidden="true"></span><span data-i18n="galleryEyebrow">A CLOSER
+                LOOK</span></p>
+            <h2 id="gallery-title" data-i18n="galleryTitle">Gallery</h2>
+          </div>
+          <p class="gallery-description" data-anim="up" style="--d:100ms" data-i18n="galleryDescription">Explore our
+            training activities and preparations for professional opportunities.</p>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-item" data-anim="up" style="--d:0ms">
+            <button class="gallery-tile" type="button" aria-haspopup="dialog">
+              <img src="img/bidang_kerja/galeri/Foto-Pelatihan-Spa-Therapist-01-2048x1537.png"
+                alt="Spa Therapist Training" loading="lazy" decoding="async">
+            </button>
+          </article>
+          <article class="gallery-item" data-anim="up" style="--d:65ms">
+            <button class="gallery-tile" type="button" aria-haspopup="dialog">
+              <img src="img/bidang_kerja/galeri/Foto-Pelatihan-Spa-Therapist-04-768x576.webp"
+                alt="Spa Therapist Training" loading="lazy" decoding="async">
+            </button>
+          </article>
+          <article class="gallery-item" data-anim="up" style="--d:130ms">
+            <button class="gallery-tile" type="button" aria-haspopup="dialog">
+              <img src="img/bidang_kerja/galeri/Foto-Pelatihan-Spa-Therapist-05-1536x1153.webp"
+                alt="Spa Therapist Training" loading="lazy" decoding="async">
+            </button>
+          </article>
+          <article class="gallery-item" data-anim="up" style="--d:195ms">
+            <button class="gallery-tile" type="button" aria-haspopup="dialog">
+              <img src="img/bidang_kerja/galeri/Foto-Pelatihan-Steward-02-1024x768.webp" alt="Steward Training"
+                loading="lazy" decoding="async">
+            </button>
+          </article>
+          <article class="gallery-item" data-anim="up" style="--d:260ms">
+            <button class="gallery-tile" type="button" aria-haspopup="dialog">
+              <img src="img/bidang_kerja/galeri/Foto-Web-Kegiatan-Pelatihan-Kerja-Turki-07.webp"
+                alt="Work Training for Turkey" loading="lazy" decoding="async">
+            </button>
+          </article>
+          <article class="gallery-item" data-anim="up" style="--d:325ms">
+            <button class="gallery-tile" type="button" aria-haspopup="dialog">
+              <img src="img/bidang_kerja/galeri/Foto-Pelatihan-Steward-03-768x576.webp" alt="Steward Training"
+                loading="lazy" decoding="async">
+            </button>
+          </article>
+        </div>
+        <p class="gallery-note" data-i18n="galleryNote">Select a photo to take a closer look at our training activities.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <div class="contact-heading">
+          <div data-anim="up">
+            <p class="contact-eyebrow"><span aria-hidden="true"></span><span data-i18n="contactEyebrow">LET'S BUILD A
+                CONNECTION</span></p>
+            <h2 id="contact-title" data-i18n="contactTitle">Contact Us</h2>
+          </div>
+          <p class="contact-description" data-anim="up" style="--d:100ms" data-i18n="contactDescription">Your next
+            opportunity starts with a conversation. Get in touch with our team in Istanbul.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-frame contact-office" data-anim="up">
+            <span class="contact-frame-number" aria-hidden="true">01 / ISTANBUL</span>
+            <div class="contact-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg></div>
+            <h3 data-i18n="contactOffice">Office Address</h3>
+            <address>YEŞİLCE MAH. DALGIÇ SK. NO: 11 İÇ KAPI NO: 1<br>Kağıthane, İstanbul</address>
+
+            Email: <a href="mailto:info@asyakoprusu.com">info@asyakoprusu.com</a>
+            <!-- <a class="contact-map"
+              href="https://www.google.com/maps/search/?api=1&amp;query=YE%C5%9E%C4%B0LCE%20MAH.%20DALGI%C3%87%20SK.%20NO%3A%2011%20Ka%C4%9F%C4%B1thane%20%C4%B0stanbul"
+              target="_blank" rel="noopener noreferrer"><span data-i18n="contactMap">View on map</span><span
+                aria-hidden="true">&#8599;</span></a> -->
+          </div>
+          <div class="contact-people">
+            <h3 class="contact-people-heading" data-anim="up" data-i18n="contactPeople">Contact Person</h3>
+            <article class="contact-frame contact-person" data-anim="up" style="--d:100ms"
+              aria-labelledby="contact-dewi">
+              <div class="contact-person-heading">
+                <div class="contact-initials" aria-hidden="true">DS</div>
+                <div>
+                  <h4 id="contact-dewi">Ms. Dewi Setyowati</h4>
+                  <p class="contact-role" data-i18n="contactDewiRole">Marketing Director</p>
+                </div>
+              </div>
+              <a class="contact-detail" href="tel:+905340128667"><span class="contact-detail-label"
+                  data-i18n="contactPhone">PHONE</span><span>+90 534 012 86 67</span><span class="contact-detail-arrow"
+                  aria-hidden="true">&#8599;</span></a>
+              <a class="contact-detail" href="mailto:dewirecruter@gmail.com"><span class="contact-detail-label"
+                  data-i18n="contactEmail">EMAIL</span><span>dewirecruter@gmail.com</span><span
+                  class="contact-detail-arrow" aria-hidden="true">&#8599;</span></a>
+            </article>
+
+          </div>
+        </div>
+        <div class="contact-signoff" data-anim="up"><span>ASYA KÖPRÜSÜ</span><span data-i18n="contactSignoff">Connecting
+            people. Opening possibilities.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="gallery-dialog" aria-labelledby="gallery-dialog-caption">
+    <div class="gallery-dialog-toolbar">
+      <span class="gallery-dialog-counter"></span>
+      <button type="button" class="gallery-dialog-close"><span data-i18n="galleryClose">Close</span><span
+          aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="gallery-dialog-stage">
+      <button type="button" class="gallery-dialog-prev" aria-label="Previous photo">&#8592;</button>
+      <img class="gallery-dialog-image" src="" alt="">
+      <button type="button" class="gallery-dialog-next" aria-label="Next photo">&#8594;</button>
+    </div>
+    <p id="gallery-dialog-caption"></p>
+  </dialog>
+  <script src="script.js?v=20261014-13"></script>
+</body>
+
+</html>
